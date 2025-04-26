@@ -6,10 +6,7 @@
   "remoteUser": "devcontainer",
   "customizations": {
     "vscode": {
-      "extensions": [
-        "GitHub.copilot",
-        "golang.Go"
-      ]
+      "extensions": ["GitHub.copilot", "golang.Go"]
     }
   }
 }
