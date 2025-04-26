@@ -1,0 +1,15 @@
+{
+  "name": "grpc-demo",
+  "dockerComposeFile": "docker-compose.yaml",
+  "service": "grpc-demo",
+  "workspaceFolder": "/workspace",
+  "remoteUser": "devcontainer",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "GitHub.copilot",
+        "golang.Go"
+      ]
+    }
+  }
+}
