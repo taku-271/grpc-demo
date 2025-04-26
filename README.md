@@ -37,3 +37,30 @@ gRPCでは，HTTP/2とProtocol Buffersを使用．
   * フロントからバックには適していない．  
 
 ※参考 https://qiita.com/S4nTo/items/0ff0445542538ef49a05
+
+### protoファイル
+関数の定義をするファイル．
+```proto
+syntax = "proto3";
+
+// 自動生成するGoのコードの保存先
+option go_package = "pkg/grpc";
+
+package demo;
+
+// サービスの定義
+service HelloWorldService {
+  // サービスが持つメソッドの定義
+  // Hello関数で引数にHelloRequestを受け取り，HelloResponseを返す
+  rpc Hello (HelloRequest) returns (HelloResponse);
+}
+
+// 型
+message HelloRequest {
+  string name = 1;
+}
+
+message HelloResponse {
+  string message = 1;
+}
+```
